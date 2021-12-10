@@ -24,7 +24,13 @@ public class DropdownWithoutSelectTag {
 		
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//*[@id='select-item-select-0-2']")).click();
+		driver.findElement(By.xpath("//*[@class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']")).click();
+		driver.findElement(By.xpath("//*[@id='select-0']")).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//*[@id='select-item-select-0-7']")).click();
+		
+		
 		
 	}
 
