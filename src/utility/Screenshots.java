@@ -12,13 +12,13 @@ public class Screenshots {
 	
 	public static void captureScreenshot(WebDriver driver, String filename) throws IOException
 	{
-		
 		TakesScreenshot scrshot = (TakesScreenshot)driver;
 		
 		File source = scrshot.getScreenshotAs(OutputType.FILE);
 		
-		File destination = new File("E:\\Desktop\\VimanNagar\\Sept 21\\Selenium\\Capturedscreenshots\\"+filename+".png");
-		
+//		File destination = new File("E:\\Desktop\\VimanNagar\\Sept 21\\Selenium\\Capturedscreenshots\\"+filename+".png");
+		String path = System.getProperty("user.dir")+"\\Screenshots\\"+filename+".png";		
+		File destination = new File(path);
 		
 		FileHandler.copy(source, destination);
 		

@@ -1,14 +1,14 @@
-package launchingbrowser;
+package basiccomponenthandling;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DropdownWithoutSelectTag {
+public class ClickByJavaScriptExecutor {
 	
-	
-	public static void main(String[] args) throws InterruptedException {
+public static void main(String[] args) throws InterruptedException {
 		
 		
 		System.setProperty("webdriver.chrome.driver", "E:\\Desktop\\VimanNagar\\Sept 21\\Selenium jar\\chromedriver 96\\chromedriver.exe");
@@ -30,15 +30,14 @@ public class DropdownWithoutSelectTag {
 		
 	
 		
-		WebElement chkbox= driver.findElement(By.xpath("//*[@id='select-item-select-0-7']"));
-		
-		chkbox.click();
-
-		
+		WebElement august= driver.findElement(By.xpath("//*[@id='select-item-select-0-7']"));
 	
+		// Alternate to click():
 		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
-		
-	}
+		js.executeScript("arguments[0].click();", august);
+
+}
 
 }
