@@ -1,6 +1,11 @@
 package actionclassdiscussion;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class MouseOperations {
 	
-public static void main(String[] args) {
+public static void main(String[] args) throws AWTException {
 		
 		System.setProperty("webdriver.chrome.driver", "E:\\Desktop\\VimanNagar\\Sept 21\\Selenium jar\\chromedriver 96\\chromedriver.exe");
 		
@@ -37,7 +42,8 @@ public static void main(String[] args) {
 		
 		act.contextClick(admintab).perform();
 		
-		
+
+
 		
 		
 }
