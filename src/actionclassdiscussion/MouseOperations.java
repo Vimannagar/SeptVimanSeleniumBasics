@@ -42,8 +42,14 @@ public static void main(String[] args) throws AWTException {
 		
 		act.contextClick(admintab).perform();
 		
-
-
+		Robot robot = new Robot();
+		
+		robot.keyPress(KeyEvent.VK_DOWN);
+		
+		robot.keyPress(KeyEvent.VK_DOWN);
+		
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyPress(KeyEvent.VK_ENTER);
 		
 		
 }
