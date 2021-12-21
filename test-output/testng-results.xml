@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-19T09:27:40 IST" name="Default suite" finished-at="2021-12-19T09:27:41 IST" duration-ms="789">
+  <suite started-at="2021-12-21T09:57:43 IST" name="Default suite" finished-at="2021-12-21T09:57:43 IST" duration-ms="223">
     <groups>
     </groups>
-    <test started-at="2021-12-19T09:27:40 IST" name="Default test" finished-at="2021-12-19T09:27:41 IST" duration-ms="789">
-      <class name="testngdiscussion.TestCase">
-        <test-method signature="a()[pri:0, instance:testngdiscussion.TestCase@6da21078]" started-at="2021-12-19T09:27:41 IST" name="a" finished-at="2021-12-19T09:27:41 IST" duration-ms="50" status="PASS">
+    <test started-at="2021-12-21T09:57:43 IST" name="Default test" finished-at="2021-12-21T09:57:43 IST" duration-ms="223">
+      <class name="testngdiscussion.EnabledKeyword">
+        <test-method signature="login()[pri:-1000, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="login" finished-at="2021-12-21T09:57:43 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- a -->
-        <test-method signature="home()[pri:0, instance:testngdiscussion.TestCase@6da21078]" started-at="2021-12-19T09:27:41 IST" name="home" finished-at="2021-12-19T09:27:41 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="profile()[pri:0, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="profile" finished-at="2021-12-21T09:57:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method signature="logout()[pri:100, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="logout" finished-at="2021-12-21T09:57:43 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="passwordChange()[pri:100, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="passwordChange" finished-at="2021-12-21T09:57:43 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordChange -->
+        <test-method signature="home()[pri:200, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="home" finished-at="2021-12-21T09:57:43 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- home -->
-        <test-method signature="loginTest()[pri:0, instance:testngdiscussion.TestCase@6da21078]" started-at="2021-12-19T09:27:41 IST" name="loginTest" finished-at="2021-12-19T09:27:41 IST" duration-ms="2" status="PASS">
+        <test-method signature="dashBoard()[pri:300, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="dashBoard" finished-at="2021-12-21T09:57:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- testngdiscussion.TestCase -->
+        </test-method> <!-- dashBoard -->
+      </class> <!-- testngdiscussion.EnabledKeyword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
