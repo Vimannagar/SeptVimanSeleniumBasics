@@ -1,37 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Profile section of home page]]>
+    </line>
+    <line>
+      <![CDATA[URL validation over home page]]>
+    </line>
+    <line>
+      <![CDATA[Login test case with correct credentials]]>
+    </line>
+    <line>
+      <![CDATA[Login test case with incorrect credentials]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-12-21T09:57:43 IST" name="Default suite" finished-at="2021-12-21T09:57:43 IST" duration-ms="223">
+  <suite started-at="2021-12-22T09:54:50 IST" name="Sanity Test cases" finished-at="2021-12-22T09:54:50 IST" duration-ms="117">
     <groups>
     </groups>
-    <test started-at="2021-12-21T09:57:43 IST" name="Default test" finished-at="2021-12-21T09:57:43 IST" duration-ms="223">
-      <class name="testngdiscussion.EnabledKeyword">
-        <test-method signature="login()[pri:-1000, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="login" finished-at="2021-12-21T09:57:43 IST" duration-ms="24" status="PASS">
+    <test started-at="2021-12-22T09:54:50 IST" name="Module1" finished-at="2021-12-22T09:54:50 IST" duration-ms="117">
+      <class name="testngdiscussion.TestClass2">
+        <test-method signature="profileSection()[pri:0, instance:testngdiscussion.TestClass2@4229bb3f]" started-at="2021-12-22T09:54:50 IST" name="profileSection" finished-at="2021-12-22T09:54:50 IST" duration-ms="17" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Profile section of home page]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="profile()[pri:0, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="profile" finished-at="2021-12-21T09:57:43 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- profileSection -->
+        <test-method signature="urlValidation()[pri:0, instance:testngdiscussion.TestClass2@4229bb3f]" started-at="2021-12-22T09:54:50 IST" name="urlValidation" finished-at="2021-12-22T09:54:50 IST" duration-ms="4" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[URL validation over home page]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- profile -->
-        <test-method signature="logout()[pri:100, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="logout" finished-at="2021-12-21T09:57:43 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- urlValidation -->
+      </class> <!-- testngdiscussion.TestClass2 -->
+      <class name="testngdiscussion.TestClass1">
+        <test-method signature="loginWithCorrectCredentials()[pri:0, instance:testngdiscussion.TestClass1@25fb8912]" started-at="2021-12-22T09:54:50 IST" name="loginWithCorrectCredentials" finished-at="2021-12-22T09:54:50 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login test case with correct credentials]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="passwordChange()[pri:100, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="passwordChange" finished-at="2021-12-21T09:57:43 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- loginWithCorrectCredentials -->
+        <test-method signature="loginWithIncorrectCredentials()[pri:0, instance:testngdiscussion.TestClass1@25fb8912]" started-at="2021-12-22T09:54:50 IST" name="loginWithIncorrectCredentials" finished-at="2021-12-22T09:54:50 IST" duration-ms="3" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login test case with incorrect credentials]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- passwordChange -->
-        <test-method signature="home()[pri:200, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="home" finished-at="2021-12-21T09:57:43 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- home -->
-        <test-method signature="dashBoard()[pri:300, instance:testngdiscussion.EnabledKeyword@4229bb3f]" started-at="2021-12-21T09:57:43 IST" name="dashBoard" finished-at="2021-12-21T09:57:43 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashBoard -->
-      </class> <!-- testngdiscussion.EnabledKeyword -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginWithIncorrectCredentials -->
+      </class> <!-- testngdiscussion.TestClass1 -->
+    </test> <!-- Module1 -->
+  </suite> <!-- Sanity Test cases -->
 </testng-results>
