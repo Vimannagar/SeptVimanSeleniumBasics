@@ -10,7 +10,10 @@ import org.testng.annotations.Test;
 
 public class AnnotationsInTestNG2 {
 	
-	
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Test annotation from Class2");
+	}
 	
 //	 to execute prior to the execution of any thing available in the class
 	@BeforeClass
