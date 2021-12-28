@@ -33,12 +33,33 @@ public class AssertionsInTestNG {
 	
 	boolean ispresent = url.contains("dashboardd");
 	
-	Assert.assertTrue(ispresent, "Test case is failed please file a bug");
+	// first assert method:
+	
+	Assert.assertTrue(ispresent, "Test case is failed please file a bug");// fail
+	
 	
 	System.out.println("Last line of test case");
 	
 
+	}
+	
+	@Test
+	public void testCase2()
+	{
+		String s = "abc";
 		
+	boolean isequal = s.equals("Abc");// pass
+	
+	Assert.assertFalse(isequal, "Assertion failed please check !!!");
+	System.out.println("last line");
+	
+	}
+	
+	@Test 
+	public void testCase3()
+	{
+		String s = "abc";
+		Assert.assertEquals(s, "abc");// pass
 	}
 
 }

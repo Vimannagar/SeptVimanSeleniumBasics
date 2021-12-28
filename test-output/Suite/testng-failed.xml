@@ -3,18 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testngdiscussion.DependsOnMethod">
+      <class name="testngdiscussion.SoftAssertDisc">
         <methods>
-          <include name="login"/>
-          <include name="logoff"/>
+          <include name="testCase1"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethod -->
-      <class name="testngdiscussion.DependsOnMethod2">
+      </class> <!-- testngdiscussion.SoftAssertDisc -->
+      <class name="testngdiscussion.TestCasesForFailedExecution">
         <methods>
-          <include name="checkBox"/>
-          <include name="dashBoardTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethod2 -->
+      </class> <!-- testngdiscussion.TestCasesForFailedExecution -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

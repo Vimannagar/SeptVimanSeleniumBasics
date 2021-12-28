@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.AssertionsInTestNG">
+      <class name="testngdiscussion.ListenersTest">
         <methods>
-          <include name="urlTest"/>
+          <include name="loginTest"/>
+          <include name="home"/>
         </methods>
-      </class> <!-- testngdiscussion.AssertionsInTestNG -->
+      </class> <!-- testngdiscussion.ListenersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
