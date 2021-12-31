@@ -23,7 +23,11 @@ public class BaseTest {
 		
 		 driver = new ChromeDriver();
 		
+		 driver.manage().window().maximize();
+		 
 		// redirecting to a URL
+		 
+		 
 		
 		driver.get("https://kite.zerodha.com/");
 	}

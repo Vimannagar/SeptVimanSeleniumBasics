@@ -5,9 +5,9 @@
     <classes>
       <class name="pomtest.LoginTest">
         <methods>
+          <include name="validatePage"/>
           <include name="initDriver"/>
           <include name="createObject"/>
-          <include name="loginToApp"/>
         </methods>
       </class> <!-- pomtest.LoginTest -->
     </classes>
