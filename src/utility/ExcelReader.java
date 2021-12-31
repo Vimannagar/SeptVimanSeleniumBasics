@@ -43,9 +43,9 @@ public class ExcelReader {
 	
 	XSSFWorkbook wb = new XSSFWorkbook(fis);
 	
-	XSSFSheet sh1 = wb.getSheet("Testsheet");
+	XSSFSheet sh1 = wb.getSheet("Testsheet"); 
 	
-	String value = sh1.getRow(2).getCell(1).getStringCellValue();
+	String value =sh1.getRow(2).getCell(1).getStringCellValue();
 	
 	
 	System.out.println(value);
@@ -58,9 +58,40 @@ public class ExcelReader {
 //	
 //	System.out.println(getintvalue);
 	
-	writeData();
+//	writeData();
+	
+	writeData(8, 1, "Write Test");
+	
+	
+
 		
 	}
+	
+	public static void writeData(int row, int column, String value) throws IOException
+	{
+		File src = new File("C:\\Users\\A\\Desktop\\TestDataSeptBatch.xlsx");
+//		To load that particular location in order to perform the action
+		
+		FileInputStream fis = new FileInputStream(src);
+		
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		
+		XSSFSheet sh1 = wb.getSheet("Testsheet");
+		
+		File fout = new File("C:\\Users\\A\\Desktop\\TestDataSeptBatch.xlsx");
+		
+		FileOutputStream fos = new FileOutputStream(fout);
+//		To write for Already available row but not available column
+		sh1.getRow(row).getCell(column).setCellValue(value);
+//			To write for un available row also not available column
+		
+		
+		
+//		to save the content
+		wb.write(fos);
+		
+	}
+	
 	
 	public static void writeData() throws IOException
 	{
@@ -80,6 +111,8 @@ public class ExcelReader {
 	sh1.getRow(8).createCell(2).setCellValue("Write Test");
 //		To write for un available row also not available column
 	sh1.createRow(50).createCell(3).setCellValue("Newrow and column");
+	
+	sh1.createRow(0).createCell(0).setCellValue("Gourav");
 	
 	
 //	to save the content

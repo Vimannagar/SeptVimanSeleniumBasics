@@ -25,6 +25,8 @@ public class TestNGListeners extends ListenersTest2 implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test case failed :"+result.getName());
 		
+		
+		
 		try {
 			Screenshots.captureScreenshot(driver, result.getName());
 		} catch (IOException e) {
